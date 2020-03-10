@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gostosuras Caseira</title>
+    <link rel="stylesheet" href="Design.css">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
+</head>
+
+<script src="JS.js"></script>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <img src="Imagens/logo1 - edit.png" id="icone">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('Imagens/logo1 - edit.png')"
+                        onmouseout="mudaFoto('Imagens/logo1 - edit.png')"><a href="index.html">Home</a>
+                    </li>
+                    <li onmouseover="mudaFoto('Imagens/bolo.png')" 
+                        onmouseout="mudaFoto('Imagens/logo1 - edit.png')"><a href="bolos.html">Bolos Decorados</a>
+                    </li>
+                    <li onmouseover="mudaFoto('Imagens/bolo.png')" 
+                        onmouseout="mudaFoto('Imagens/logo1 - edit.png')"><a href="bolosSimples.html">Bolos Simples</a>
+                    </li>
+                    <li onmouseover="mudaFoto('Imagens/doces.jpg')" 
+                        onmouseout="mudaFoto('Imagens/logo1 - edit.png')"><a href="doces.html">Doces</a>
+                    </li>
+                    <li onmouseover="mudaFoto('Imagens/geleia-manga-maracuja.PNG')"
+                        onmouseout="mudaFoto('Imagens/logo1 - edit.png')"><a href="geleias.html">Geleias</a>
+                    </li>
+                    <li onmouseover="mudaFoto('Imagens/contato.png')" 
+                        onmouseout="mudaFoto('Imagens/logo1 - edit.png')"><a href="fale-conosco.html">Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <form method="post" id="fContato" action="mailto:mathde12@gmail.com">
+
+            <section id="corpo">
+
+                <article id="noticia-principal">
+                    <header id="cabecalho">
+                        <hgroup id="ca">
+                            <p> </p>
+                            <h1>Formulário de Contato<br /></h1>
+                            <p> </p>
+                        </hgroup>
+                    </header>
+
+                    <form method="POST" id="fContato" action="" oninput="cal_total();">
+                        <fieldset id="usuario">
+                            <legend>Identificação do Usuário</legend>
+                            <p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="40"
+                                    maxlength="50" placeholder="Nome Completo"></p>
+                            <p><label for="cEmail">E-mail: </label><input type="email" name="tEmail" id="cEmail"
+                                    size="30" maxlength="40" placeholder="Seu Email"></p>
+                            <p><label for="cTelefone">Celular/Telefone: </label><input type="telefone" name="tTelefone"
+                                    id="cTelefone" size="15" maxlength="20" placeholder="(  )     -    "></p>
+                            <p>Data de Nascimento: <input type="date" name="tData" id="cData"></p>
+
+                        </fieldset>
+
+                        <fieldset id="pedido">
+                            <legend>Quero uma Cotação</legend>
+
+                            <p><label for="cUrgencia">Grau de Urgência:</label>
+                                Min <input type="range" name="tUrgencia" id="cUrgencia" min="0" max="10" step="1"> Máx
+                            </p>
+                            <p><label for="cMensagem">Mensagem:</label>
+                                <textarea name="tMensagem" id="cMensagem" cols="30" rows="4"
+                                    placeholder="Deixa aqui sua mensagem..."></textarea></p>
+
+                            <p><label for="cProduto">Produto: </label><select name="tProduto" id="cEstado"> </p>
+                            <option value="">Selecione...</option>
+                            <option value="">Bolo</option>
+                            <option value="">Doces</option>
+                            <option value="">Geléias</option>
+                            <option value="">Outros</option>
+                            </select>
+                        </fieldset>
+                        <input type="image" name="tEnviar" id="botao" src="Imagens/botao-enviar.png">
+                    </form>
+
+                </article>
+            </section>
+
+            <footer id="rodape">
+                <p></p>
+                <p>&copy;Copyright 2019 - Gostosuras Caseira <br>
+                    <a href="https://www.instagram.com/gostosuras.caseira/" target="_blank"><img 
+                        src="Imagens/insta.jpg" id="icone"></a>
+                    <a href="https://www.facebook.com/gostosuras.caseira/" target="_blank"><img
+                            src="Imagens/facebook.png" id="iconef"></a>
+                </p>
+            </footer>
+    </div>
+</body>
